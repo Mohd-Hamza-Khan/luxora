@@ -1,0 +1,453 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f8f5f1;
+  color:#1a1a1a;
+  overflow-x:hidden;
+}
+
+h1,h2,h3{
+  font-family:'Playfair Display',serif;
+}
+
+a{
+  text-decoration:none;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+/* NAVBAR */
+
+.navbar{
+  width:100%;
+  padding:25px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:999;
+  transition:0.3s;
+}
+
+.navbar.scrolled{
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo span{
+  font-size:32px;
+  font-weight:700;
+  font-family:'Playfair Display',serif;
+}
+
+.nav-links{
+  display:flex;
+  gap:35px;
+  list-style:none;
+}
+
+.nav-links a{
+  color:#111;
+  font-size:15px;
+}
+
+.btn{
+  padding:14px 24px;
+  border:none;
+  background:#8a6448;
+  color:#fff;
+  border-radius:40px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#6e4d35;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:30px;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop') center/cover;
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:0 8%;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+}
+
+.hero-content{
+  position:relative;
+  max-width:650px;
+  color:white;
+}
+
+.mini-title{
+  letter-spacing:3px;
+  margin-bottom:20px;
+  font-size:14px;
+}
+
+.hero h1{
+  font-size:72px;
+  line-height:1.1;
+  margin-bottom:25px;
+}
+
+.hero-text{
+  font-size:18px;
+  margin-bottom:35px;
+  line-height:1.8;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+}
+
+.primary-btn,
+.secondary-btn{
+  padding:16px 28px;
+  border:none;
+  border-radius:40px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.primary-btn{
+  background:#fff;
+  color:#111;
+}
+
+.secondary-btn{
+  background:transparent;
+  border:1px solid #fff;
+  color:#fff;
+}
+
+/* ABOUT */
+
+.about{
+  padding:120px 8%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  background:#fff;
+}
+
+.section-tag{
+  font-size:13px;
+  letter-spacing:2px;
+  margin-bottom:20px;
+  color:#8a6448;
+}
+
+.about h2{
+  font-size:48px;
+  line-height:1.3;
+}
+
+.about-right{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.about-right p{
+  line-height:1.9;
+  margin-bottom:30px;
+  color:#555;
+}
+
+.about-right a{
+  color:#111;
+  font-weight:600;
+}
+
+/* SERVICES */
+
+.services{
+  padding:100px 8%;
+}
+
+.section-heading{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.section-heading h2{
+  font-size:52px;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.service-card{
+  background:#111;
+  color:white;
+  padding:40px;
+  border-radius:20px;
+  transition:0.4s;
+}
+
+.service-card:hover{
+  transform:translateY(-10px);
+}
+
+.number{
+  font-size:22px;
+  margin-bottom:80px;
+  color:#b38b6d;
+}
+
+.service-card h3{
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.service-card p{
+  line-height:1.8;
+  color:#ccc;
+}
+
+/* PRODUCTS */
+
+.products{
+  padding:100px 8%;
+  background:#fff;
+}
+
+.product-container{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.product-card{
+  background:#f8f5f1;
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.4s;
+}
+
+.product-card:hover{
+  transform:scale(1.03);
+}
+
+.product-card img{
+  height:320px;
+  object-fit:cover;
+}
+
+.product-info{
+  padding:25px;
+}
+
+.product-info h3{
+  margin-bottom:10px;
+}
+
+.product-info p{
+  margin-bottom:20px;
+  color:#8a6448;
+  font-weight:600;
+}
+
+.product-info button{
+  width:100%;
+  padding:14px;
+  border:none;
+  background:#111;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* SHOWCASE */
+
+.showcase{
+  height:80vh;
+  background:url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1400&auto=format&fit=crop') center/cover;
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:0 8%;
+}
+
+.showcase::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+}
+
+.showcase-content{
+  position:relative;
+  color:white;
+  max-width:500px;
+}
+
+.showcase-content h2{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.showcase-content p{
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial{
+  padding:120px 8%;
+  background:#fff;
+}
+
+.testimonial-box{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.quote{
+  font-size:34px;
+  line-height:1.7;
+  font-family:'Playfair Display',serif;
+  margin-bottom:30px;
+}
+
+.testimonial h4{
+  color:#8a6448;
+}
+
+/* CONTACT */
+
+.contact{
+  padding:100px 8%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+}
+
+.contact h2{
+  font-size:52px;
+}
+
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:18px;
+  border:none;
+  border-radius:14px;
+  background:white;
+  font-size:15px;
+}
+
+.contact-form button{
+  padding:18px;
+  border:none;
+  background:#8a6448;
+  color:white;
+  border-radius:14px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+  padding:30px;
+  text-align:center;
+  background:#111;
+  color:#aaa;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+  .hero h1{
+    font-size:54px;
+  }
+
+  .about,
+  .contact,
+  .service-grid,
+  .product-container{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .nav-links{
+    position:absolute;
+    top:90px;
+    right:-100%;
+    background:white;
+    width:250px;
+    flex-direction:column;
+    padding:30px;
+    transition:0.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active{
+    right:20px;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .btn{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .about h2,
+  .section-heading h2,
+  .contact h2,
+  .showcase-content h2{
+    font-size:38px;
+  }
+
+}
