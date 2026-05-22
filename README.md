@@ -51,8 +51,6 @@ luxora-interior-website/
 ├── index.html
 ├── style.css
 ├── script.js
-└── assets/
-    └── images/
 ```
 
 ---
@@ -169,14 +167,6 @@ If you'd like to collaborate or improve this project:
 
 - GitHub: https://github.com/yourusername
 - Email: yourmail@example.com
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
-Feel free to use and modify it.
 
 ---
 
